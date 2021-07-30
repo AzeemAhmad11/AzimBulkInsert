@@ -2,6 +2,13 @@
     ViewData["Title"] = "Home Page";
 }
 
+<style type="text/css">
+    .longSubmitButton {
+        width: 100px;
+        height:30px
+        
+    }
+</style>
 <div class="text-center">
     <h1 class="display-4">Bulk Insert</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">AWORLD</a>.</p>
@@ -9,5 +16,5 @@
 
 <form method="post" asp-controller="Home">
     <h2>Total Employee:@ViewBag.TotalEmployee</h2>
-    <button asp-action="Save"  class="btn btn-success"></button>
+    <button asp-action="Save"  class="longSubmitButton"> Insert</button>
 </form>
