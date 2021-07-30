@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bulk Insert</h1>
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">AWORLD</a>.</p>
+</div>
+
+<form method="post" asp-controller="Home">
+    <h2>Total Employee:@ViewBag.TotalEmployee</h2>
+    <button asp-action="Save"  class="btn btn-success"></button>
+</form>
